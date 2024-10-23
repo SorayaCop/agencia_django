@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content_post %}
+
+          {% include 'global/header.html' %}
+
+
+
+         <!-- #STATS -->
+      <section class="stats" aria-label="our stats">
+    </br></br>
+      <div class="container">
+    </br></br></br>
+           <span class="h1" style="text-align: center; color: aliceblue;">{{post.title}}</span>
+        </br></br>
+      </div>
+      </section>
+
+
+        <!--  #FEATURE-->
+        <section class="section feature" aria-labelledby="feature-label">
+            <div class="container">
+              <figure class="feature-banner">
+                <img src="{{post.image.url}}" width="800" height="531" loading="lazy" alt="feature banner"
+                  class="w-100">
+              </figure>
+              <div class="feature-content">
+               <h2 class="h2 section-title">
+                {{post.description}}
+                </h2>
+                <p class="section-text">
+                  {{post.text_new}}
+                </p>
+                <p class="section-text">
+                    {{post.text_new}}
+                  </p>
+
+              </div>
+            </div>
+        </section>
+
+
+        {% include 'global/footer.html' %}
+
+
+{% endblock %}

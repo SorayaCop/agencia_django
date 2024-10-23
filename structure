@@ -1,0 +1,40 @@
+projeto_agencia/
+├── project/
+│   ├── settings.py
+│   ├── urls.py
+│   └── ...
+│
+├── agencia_app/
+│   ├── templates/
+│   │   ├── global/
+│   │   │   ├── header.html
+│   │   │   └── footer.html
+│   │   ├── about.html
+│   │   ├── base.html
+│   │   ├── blog.html
+│   │   ├── home.html
+│   │   └── new.html
+│   ├── views.py
+│   ├── models.py
+│   ├── urls.py
+│   └── ...
+│
+├── static/
+│   ├── css/
+│   │   ├── property.html
+│   │   ├── responsive.html
+│   │   └── styles.css
+│   ├── js/
+│   │   └── scripts.js
+│   └── images/
+│       └── ...
+│
+├── media/
+│   └── images/
+│       └── ...
+│
+├── manage.py
+└── ...
+
+
+

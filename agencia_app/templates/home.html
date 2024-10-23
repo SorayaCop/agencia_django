@@ -1,0 +1,267 @@
+{% extends 'base.html' %}
+{% load static %}
+ 
+{% block content %}
+ 
+    {% include 'global/header.html' %}
+
+        <!-- #HERO-->
+        <section class="section hero has-bg-image"> 
+            <div class="container">
+              <div class="hero-content">
+                <h1 class="h1 hero-title">Elaboramos soluções específicas com expertise.</h1>
+                <p class="hero-text">
+                  Somos uma empresa criativa que se concentra em trazer soluções de longo prazo aos clientes.
+                </p>
+            
+                <div class="btn-wrapper">
+                  <a href="{% url 'about' %}" class="btn btn-primary">Saber Mais</a>
+                  <a href="#" class="btn btn-outline">Contatos</a>
+                </div>
+              </div>
+            
+              <div class="hero-slider" data-slider>
+                <div class="slider-inner">
+                  <ul class="slider-container" data-slider-container>
+            
+                    <li class="slider-item">
+                      <figure class="img-holder" style="--width: 575; --height: 550;">
+                        <img src="{% static 'images/hero-slide-1.jpg' %}" width="575" height="550" alt="" class="img-cover">
+                      </figure>
+                    </li>
+            
+                    <li class="slider-item">
+                      <div class="hero-card">
+                        <figure class="img-holder" style="--width: 575; --height: 550;">
+                          <img src="{% static 'images/hero-slide-2.jpg' %}" width="575" height="550" alt="hero banner"
+                            class="img-cover">
+                        </figure>
+                      </div>
+                    </li>
+            
+                    <li class="slider-item">
+                      <figure class="img-holder" style="--width: 575; --height: 550;">
+                        <img src="{% static 'images/hero-slide-3.jpg' %}" width="575" height="550" alt="" class="img-cover">
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
+                <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+                  <ion-icon name="arrow-back"></ion-icon>
+                </button>
+                <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </button>
+              </div>
+            </div>
+        </section>
+
+
+        <!-- #SERVICE-->
+        <section class="section service" aria-labelledby="service-label">
+            <div class="container">
+              <p class="section-subtitle" id="service-label">O QUE FAZEMOS?</p>
+              <h2 class="h2 section-title">
+                Especialistas em soluções de Marketing, Finanças ou Gestão.
+              </h2>
+        
+              <ul class="grid-list">
+                <li>
+                    <div class="service-card">
+                      <div class="card-icon">
+                          <ion-icon name="bar-chart-outline" aria-hidden="true"></ion-icon>
+                      </div>
+                      <h3 class="h4 card-title">Levantamento de Dados</h3>
+                      <p class="card-text">
+                          Vamos verificar todos os parâmetros necessários para descobrir os pontos que devemos focar.
+                      </p>
+                      <a href="{% url 'about' %}" class="btn-text">
+                        <span class="span">Saber Mais</span>
+                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                      </a>
+                    </div>
+                </li>
+        
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                        <ion-icon name="bandage-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <h3 class="h4 card-title">Reformas Internas</h3>
+                    <p class="card-text">
+                        Com o tempo as estruturas vão enfraquecendo, fazemos uma reforma nos modelos de negócio.
+                    </p>
+                    <a href="{% url 'about' %}" class="btn-text">
+                      <span class="span">Saber Mais</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </li>
+        
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                        <ion-icon name="person-add-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <h3 class="h4 card-title">Mais Clientes</h3>
+                    <p class="card-text">
+                        Se lhe faltam clientes, temos uma equipe focada em conseguir bons Leads em tempo recorde
+                    </p>
+                    <a href="{% url 'about' %}" class="btn-text">
+                      <span class="span">Saber Mais</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </li>
+        
+                <li>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="construct-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                   <h3 class="h4 card-title">Melhoria de Processos</h3>
+                    <p class="card-text">
+                        Atrasos no atendimento ou na entrega não são aceitos. Melhoramos seus processos de venda
+                    </p>
+                    <a href="{% url 'about' %}" class="btn-text">
+                      <span class="span">Saber Mais</span>
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </section>
+
+
+        <!-- #ABOUT-->
+        <section class="about" id="about" aria-labelledby="about-label">
+            <div class="container">
+              <figure class="about-banner">
+                <img src="{% static 'images/about-banner.png' %}" width="800" height="580" loading="lazy" alt="about banner"
+                  class="w-100">
+              </figure>
+              <div class="about-content">
+                <p class="section-subtitle" id="about-label">Por que nos escolher?</p>
+                <h2 class="h2 section-title">
+                  Uma das melhores no seguimento de soluções empresarias.
+                </h2>
+        
+                <ul>
+                  <li class="about-item">
+                    <div class="accordion-card expanded" data-accordion>
+                      <h3 class="card-title">
+                        <button class="accordion-btn" data-accordion-btn>
+                          <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                          <spna class="span h5">Equipe de Primeira</spna>
+                        </button>
+                      </h3>
+                      <p class="accordion-content">
+                        Buscamos profissionais apaixonados por soluções com as mais variadas especialidades para formamos um time único!
+                      </p>
+                    </div>
+                  </li>
+        
+                  <li class="about-item">
+                    <div class="accordion-card" data-accordion>
+                      <h3 class="card-title">
+                        <button class="accordion-btn" data-accordion-btn>
+                          <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                          <spna class="span h5">O Melhor Suporte</spna>
+                        </button>
+                      </h3>
+                      <p class="accordion-content">
+                        Nosso time trabalha sob escalas que permitem que nossos clientes tirem suas dúvidas ou agendem reuniões 12 horas por dia!
+                      </p>
+                    </div>
+                  </li>
+        
+                  <li class="about-item">
+                    <div class="accordion-card" data-accordion>
+                      <h3 class="card-title">
+                        <button class="accordion-btn" data-accordion-btn>
+                          <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                          <spna class="span h5">Ferramentas Exclusivas</spna>
+                        </button>
+                      </h3>
+                      <p class="accordion-content">
+                        FSempre de olho nas novas tendencias, usamos as melhores ferramentas do mercado para a contrução de soluções eficientes e práticas.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </section>
+
+
+        <!--  #FEATURE-->
+        <section class="section feature" aria-labelledby="feature-label">
+            <div class="container">
+              <figure class="feature-banner">
+                <img src="{% static 'images/feature-banner.png' %}" width="800" height="531" loading="lazy" alt="feature banner"
+                  class="w-100">
+              </figure>
+              <div class="feature-content">
+                <p class="section-subtitle" id="feautre-label">Nossas Soluções</p>
+               <h2 class="h2 section-title">
+                  Somos uma empresa com foco em ajudar empresários a se manterem em alta.
+                </h2>
+                <p class="section-text">
+                  Não importa em qual área seu négocio esteja passando por dificuldades, temos profissionais e métodos
+                  para resolver qualquer problema empresarial.
+                </p>
+        
+                <ul class="feature-list">
+                  <li>
+                    <div class="feature-card">
+                      <div class="card-icon">
+                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                      </div>
+                      <span class="span">
+                        Melhorar a capitação de novos clientes
+                      </span>
+                    </div>
+                  </li>
+        
+                  <li>
+                    <div class="feature-card">
+                      <div class="card-icon">
+                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                      </div>
+                      <span class="span">
+                        Expandir o alcance do marketing
+                      </span>
+                    </div>
+                  </li>
+        
+                  <li>
+                    <div class="feature-card">
+                      <div class="card-icon">
+                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                      </div>
+                      <span class="span">
+                        Buscar metodologias ageis para atendimentos
+                      </span>
+                    </div>
+                  </li>
+        
+                  <li>
+                    <div class="feature-card">
+                      <div class="card-icon">
+                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                      </div>
+                      <span class="span">
+                        Reduzir os gastos sem perder a qualidade
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </section>
+
+
+    {% include 'global/footer.html' %}
+
+{% endblock content %}

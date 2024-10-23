@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+ 
+{% block content_blog %}
+ 
+    {% include 'global/header.html' %}
+
+
+    <!-- #PROJECT-->
+    <section class="section project" aria-labelledby="project-label">
+            <div class="container">
+              <p class="section-subtitle" id="project-label">NOSSO BLOG DE NOTÍCIAS</p>
+              <h2 class="h2 section-title" style="color: aliceblue;">
+                Confira as principais nóticias sobre o mundo empresarial e suas tendências.
+              </h2>
+              
+              <ul class="grid-list">
+                {% for post in post %}
+                <li>
+                  <div class="project-card">
+                    <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                      <img src="{{post.image.url}}" width="560" height="350" loading="lazy"
+                        alt="Ligula tristique quis risus" class="img-cover">
+                    </figure>
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <a href="{% url 'post-detail' post.id %}" class="card-title">{{post.title}}</a>
+                      </h3>
+                      <p class="card-text">
+                        {{post.description}}
+                      </p>
+
+                      <ul class="card-meta-list">
+                        <li class="card-meta-item">
+                          <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                          <time class="meta-text" datetime="2022-04-14">{{post.create_at}}</time>
+                        </li>
+        
+                        <li class="card-meta-item">
+                          <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+                          <span class="meta-text">{{post.cod}}</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                 {% endfor %}
+        
+
+              </ul>
+             
+
+            </div>
+    </section>
+
+
+    {% include 'global/footer.html' %}
+
+
+{% endblock content_blog %}

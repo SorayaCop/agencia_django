@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content_about %}
+
+          {% include 'global/header.html' %}
+
+
+         <!-- #STATS-->
+      <section class="stats" aria-label="our stats">
+    </br></br>
+      <div class="container">
+
+        <ul class="stats-card has-bg-image" >
+          <li>
+            <p class="card-text">
+              <span class="h1">518</span>
+              <spna class="span">Projetos Realizados</spna>
+            </p>
+          </li>
+
+          <li>
+            <p class="card-text">
+              <span class="h1">2667</span>
+              <spna class="span">Clientes Felizes</spna>
+            </p>
+          </li>
+
+          <li>
+            <p class="card-text">
+              <span class="h1">2184</span>
+              <spna class="span">Parceiros Especialistas</spna>
+            </p>
+          </li>
+
+          <li>
+            <p class="card-text">
+              <span class="h1">45</span>
+              <spna class="span">Prêmios Conquistados</spna>
+            </p>
+          </li>
+        </ul>
+      </div>
+      </section>
+
+        <!-- #ABOUT-->
+        <section class="about" id="about" aria-labelledby="about-label">
+            <div class="container">
+              <figure class="about-banner">
+                <img src="{% static 'images/about-banner.png' %}" width="800" height="580" loading="lazy" alt="about banner"
+                  class="w-100">
+              </figure>
+              <div class="about-content">
+                <p class="section-subtitle" id="about-label">Por que nos escolher?</p>
+                <h2 class="h2 section-title">
+                  Uma das melhores no seguimento de soluções empresarias.
+                </h2>
+        
+                <ul>
+                  <li class="about-item">
+                    <div class="accordion-card expanded" data-accordion>
+                      <h3 class="card-title">
+                        <button class="accordion-btn" data-accordion-btn>
+                          <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                          <spna class="span h5">Equipe de Primeira</spna>
+                        </button>
+                      </h3>
+                      <p class="accordion-content">
+                        Buscamos profissionais apaixonados por soluções com as mais variadas especialidades para formamos um time único!
+                      </p>
+                    </div>
+                  </li>
+        
+                  <li class="about-item">
+                    <div class="accordion-card" data-accordion>
+                      <h3 class="card-title">
+                        <button class="accordion-btn" data-accordion-btn>
+                          <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                          <spna class="span h5">O Melhor Suporte</spna>
+                        </button>
+                      </h3>
+                      <p class="accordion-content">
+                        Nosso time trabalha sob escalas que permitem que nossos clientes tirem suas dúvidas ou agendem reuniões 12 horas por dia!
+                      </p>
+                    </div>
+                  </li>
+        
+                  <li class="about-item">
+                    <div class="accordion-card" data-accordion>
+                      <h3 class="card-title">
+                        <button class="accordion-btn" data-accordion-btn>
+                          <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                          <spna class="span h5">Ferramentas Exclusivas</spna>
+                        </button>
+                      </h3>
+                      <p class="accordion-content">
+                        FSempre de olho nas novas tendencias, usamos as melhores ferramentas do mercado para a contrução de soluções eficientes e práticas.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </section>
+
+
+        <!--  #FEATURE-->
+        <section class="section feature" aria-labelledby="feature-label">
+            <div class="container">
+              <figure class="feature-banner">
+                <img src="{% static 'images/feature-banner.png' %}" width="800" height="531" loading="lazy" alt="feature banner"
+                  class="w-100">
+              </figure>
+              <div class="feature-content">
+                <p class="section-subtitle" id="feautre-label">Nossas Soluções</p>
+               <h2 class="h2 section-title">
+                  Somos uma empresa com foco em ajudar empresários a se manterem em alta.
+                </h2>
+                <p class="section-text">
+                  Não importa em qual área seu négocio esteja passando por dificuldades, temos profissionais e métodos
+                  para resolver qualquer problema empresarial.
+                </p>
+        
+                <ul class="feature-list">
+                  <li>
+                    <div class="feature-card">
+                      <div class="card-icon">
+                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                      </div>
+                      <span class="span">
+                        Melhorar a capitação de novos clientes
+                      </span>
+                    </div>
+                  </li>
+        
+                  <li>
+                    <div class="feature-card">
+                      <div class="card-icon">
+                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                      </div>
+                      <span class="span">
+                        Expandir o alcance do marketing
+                      </span>
+                    </div>
+                  </li>
+        
+                  <li>
+                    <div class="feature-card">
+                      <div class="card-icon">
+                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                      </div>
+                      <span class="span">
+                        Buscar metodologias ageis para atendimentos
+                      </span>
+                    </div>
+                  </li>
+        
+                  <li>
+                    <div class="feature-card">
+                      <div class="card-icon">
+                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                      </div>
+                      <span class="span">
+                        Reduzir os gastos sem perder a qualidade
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </section>
+
+
+        {% include 'global/footer.html' %}
+
+
+{% endblock %}
